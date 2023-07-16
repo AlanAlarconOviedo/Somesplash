@@ -10,4 +10,7 @@ puts "Seeding data"
 Comment.destroy_all
 Photo.destroy_all
 Category.destroy_all
-category = Category.create(name: "People", description: "Real people, captured. Photography has the power to reflect the world around us, give voice to individuals and groups.")
+people = Category.create(name: "People", description: "Real people, captured. Photography has the power to reflect the world around us, give voice to individuals and groups.")
+shakira = Photo.create(title: "Shakira", description: "Best dancer ever", category: people)
+
+puts "Succesfull seeding"
