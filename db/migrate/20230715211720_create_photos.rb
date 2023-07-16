@@ -4,7 +4,7 @@ class CreatePhotos < ActiveRecord::Migration[7.0]
       t.string :title
       t.text :description
       t.references :category, null: false, foreign_key: true
-      t.integer :comment_count
+      t.integer :comments_count, default: 0
 
       t.timestamps
     end
